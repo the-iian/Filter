@@ -14,8 +14,7 @@ public class ApiController {
 
     @PostMapping("")
     public User user(@RequestBody User user){
-
-         log.info("User: {},{}", user, user); // 문자열 뒤에 들어가는 객체와 중괄호는 매칭된다 (System 찍어서 +연산자와 출력하지않아도 됨)
-
+        log.info("User: {}", user); // 문자열 뒤에 들어가는 객체와 중괄호는 매칭된다 (System 찍어서 +연산자와 출력하지않아도 됨)
+        return user;
     }
 }
